@@ -34,7 +34,7 @@ type WXMiniImp interface {
 	IsExistsUser(unionID string) (user any, exists bool, err error)
 
 	// CreateUser 创建新用户
-	CreateUser(phoneNumber, unionID, openID, areaCodeByIP, clientIP string) (user any, err error)
+	CreateUser(phoneNumber, unionID, openID, clientIP string) (user any, err error)
 
 	// GenerateToken 生成用户token
 	GenerateToken(user any, sessionKey string) (data any, err error)
